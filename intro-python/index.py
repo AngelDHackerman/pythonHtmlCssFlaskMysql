@@ -15,4 +15,8 @@ print(email)
 
 miVar = 'chanchito'
 
+  # ? Multiples variables 
 
+a, b, c = 'lala', 'lele', 'lolo'
+
+print(a, b, c);
