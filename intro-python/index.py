@@ -1,4 +1,5 @@
 from curses import init_color
+from unicodedata import decimal
 
 
 if 5 > 3:                    # * este es el operador mayor que > 
@@ -34,3 +35,16 @@ inicio = 'Hola '
 final = 'mundo'
 
 print(inicio + final);
+
+
+  # ? Strings y numeros 
+
+
+palabra = 'Hola mundo'    # String
+oracion = "hola mundo comilla doble"
+
+entero = 20          # integer
+decimal = 20.2        # float
+complejo = 1j         # complex
+
+print(palabra, oracion, entero, decimal, complejo)
