@@ -3,19 +3,19 @@ from unicodedata import decimal
 
 
 if 5 > 3:                    # * este es el operador mayor que > 
-  print('5 es mayor a 3')
+   print('5 es mayor a 3')
   
 if 3 > 6: 
-  print('Esto no se va a imprimir')
+   print('Esto no se va a imprimir')
 
   # ? Variables
 
 x = 6
 y = 'chanchito feliz'
-print(x, y)
+# print(x, y)
 
 email = 'angel@angel.com'
-print(email)
+# print(email)
 
 miVar = 'chanchito'
 
@@ -23,10 +23,10 @@ miVar = 'chanchito'
   # ? Multiples variables 
 
 a, b, c = 'lala', 'lele', 'lolo'
-print(a, b, c);
+# print(a, b, c);
 
 valor1 = valor2 = valor3 = 'chanchito feliz'
-print(valor1, valor2, valor3)
+# print(valor1, valor2, valor3)
 
 
   # ? Concatenacion
@@ -34,7 +34,7 @@ print(valor1, valor2, valor3)
 inicio = 'Hola '
 final = 'mundo'
 
-print(inicio + final);
+# print(inicio + final);
 
 
   # ? Strings y numeros 
@@ -47,4 +47,37 @@ entero = 20          # integer
 decimal = 20.2        # float
 complejo = 1j         # complex
 
-print(palabra, oracion, entero, decimal, complejo)
+# print(palabra, oracion, entero, decimal, complejo)
+
+
+  # ? Listas
+
+
+lista = [1, 2, 3]      # * Esto es una lista o array 
+lista2 = lista.copy()     # * Copiamos la lista en una nueva variable
+
+lista.append(4)         # * Asi se agregan valores a la lista 
+#lista.clear()           # * Elimina todos los elementos dentro de la lista
+
+print('lista 1:',lista,'lista 2:' , lista2)
+
+
+  # ? Contando elementos y calculando el largo de una lista
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
