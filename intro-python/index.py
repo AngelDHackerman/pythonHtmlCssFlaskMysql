@@ -53,7 +53,7 @@ complejo = 1j         # complex
   # ? Listas
 
 
-lista = [1, 2, 3]      # * Esto es una lista o array 
+lista = [3, 3, 3, 3, 3]      # * Esto es una lista o array 
 lista2 = lista.copy()     # * Copiamos la lista en una nueva variable
 
 lista.append(4)         # * Asi se agregan valores a la lista 
@@ -64,10 +64,13 @@ print('lista 1:',lista,'lista 2:' , lista2)
 
   # ? Contando elementos y calculando el largo de una lista
 
+# print('count:' ,lista.count(3), lista2.count(9))    # * count, cuenta el numero de veces que aparece el parametro que se le pasa.a
+#print( 'len: lista = ' ,len(lista), '; lista 2 = ', len(lista2))               # * len, mide el largo del array
 
+largoLista = len(lista)
+largoLista2 = len(lista2)
 
-
-
+print('largoLista:', largoLista, 'largoLista2:', largoLista2)
 
 
 
