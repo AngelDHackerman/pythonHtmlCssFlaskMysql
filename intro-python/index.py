@@ -1,6 +1,3 @@
-from curses import init_color
-from unicodedata import decimal
-
 
 if 5 > 3:                    # * este es el operador mayor que > 
    print('5 es mayor a 3')
@@ -78,7 +75,7 @@ print(lista[1])
 
            # ? Eliminando elementos de una lista
 
-lista3 = ['hola', 'buenas', 'como', 'esta', 'qwer', 1, False]
+lista3 = ['hola', 'buenas', 'como', 'esta', 'qwer', 1, True]
 
 lista3.pop();       # * Elimina el ultimo elemento de la lista
 
@@ -88,9 +85,58 @@ lista3.remove('qwer')
 
 print('Eliminando un elemento en especifico: qwer', lista3)
 
+            # ? Reverse y sort 
+
+lista4 = lista3.copy()
+lista4.pop()
+lista4.reverse()
+# lista4.sort() # Esto no funciona porque no puede ordernar strings y enteros
+# todo: Solo se pueden ordenar con sort() listas del mismo tipo. 
+
+print('Lista invertida:', lista4)
+
+lista4.sort()
+print('lista invertida y ordenada', lista4)
 
 
+               # ? Tuplas
 
+# * las tuplas tienen mucho menos propiedades que las listas y usa () en lugar de [];
+
+tupla = ('hola', 'mundo', 'que', 'hace')
+# tupla.append('de bueno') Est no va a funcionar porque no posee el metodo append();
+# todo: Hay que convertir la tupla en una lista: 
+
+listaDeTupla = list(tupla)
+listaDeTupla.append('de bueno')
+
+print('lista de tupla:', listaDeTupla)
+
+
+               # ? Rangos
+
+rango = range(6)
+print('Rango:', rango) # Esto indica que el rango va de 0 hasta 6.
+
+
+               # ? Diccionarios
+
+# Los diccionarios son como los objetos en javaScript
+
+diccionario = {
+   "nombre": "Chanchito feliz",
+   "raza": "Persa",
+   "edad": 5,
+   "color": "rojo"
+}
+
+
+print('diccionario:', diccionario)
+print('diccionario["raza"]:', diccionario["raza"])
+print('diccionario["edad"]:', diccionario["edad"])
+print('diccionario["nombre"]:', diccionario["nombre"])
+
+print(diccionario.get('color'))
 
 
 
