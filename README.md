@@ -5,4 +5,4 @@ Todos los archivos python terminan en .py
 
 Para ejecutar nuestro programa nos movemos a la carpeta donde esta nuestro archivo y luego este comando: 
 
-` python3 nombreArchivo.py `.
+` nodemon --exec python3 nombreArchivo.py `.
