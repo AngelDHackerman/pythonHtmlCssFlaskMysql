@@ -8,7 +8,7 @@ if 5 > 3:                    # * este es el operador mayor que >
 if 3 > 6: 
    print('Esto no se va a imprimir')
 
-  # ? Variables
+            # ? Variables
 
 x = 6
 y = 'chanchito feliz'
@@ -20,7 +20,7 @@ email = 'angel@angel.com'
 miVar = 'chanchito'
 
 
-  # ? Multiples variables 
+            # ? Multiples variables 
 
 a, b, c = 'lala', 'lele', 'lolo'
 # print(a, b, c);
@@ -29,7 +29,7 @@ valor1 = valor2 = valor3 = 'chanchito feliz'
 # print(valor1, valor2, valor3)
 
 
-  # ? Concatenacion
+            # ? Concatenacion
 
 inicio = 'Hola '
 final = 'mundo'
@@ -37,7 +37,7 @@ final = 'mundo'
 # print(inicio + final);
 
 
-  # ? Strings y numeros 
+            # ? Strings y numeros 
 
 
 palabra = 'Hola mundo'    # String
@@ -50,10 +50,10 @@ complejo = 1j         # complex
 # print(palabra, oracion, entero, decimal, complejo)
 
 
-  # ? Listas
+            # ? Listas
 
 
-lista = [3, 3, 3, 3, 3]      # * Esto es una lista o array 
+lista = [3, 'hola', 3, 3, 3]      # * Esto es una lista o array 
 lista2 = lista.copy()     # * Copiamos la lista en una nueva variable
 
 lista.append(4)         # * Asi se agregan valores a la lista 
@@ -62,7 +62,7 @@ lista.append(4)         # * Asi se agregan valores a la lista
 print('lista 1:',lista,'lista 2:' , lista2)
 
 
-  # ? Contando elementos y calculando el largo de una lista
+            # ? Contando elementos y calculando el largo de una lista
 
 # print('count:' ,lista.count(3), lista2.count(9))    # * count, cuenta el numero de veces que aparece el parametro que se le pasa.a
 #print( 'len: lista = ' ,len(lista), '; lista 2 = ', len(lista2))               # * len, mide el largo del array
@@ -70,12 +70,23 @@ print('lista 1:',lista,'lista 2:' , lista2)
 largoLista = len(lista)
 largoLista2 = len(lista2)
 
-print('largoLista:', largoLista, 'largoLista2:', largoLista2)
+# print('largoLista:', largoLista, 'largoLista2:', largoLista2)
+
+print(lista[0])
+print(lista[1])
 
 
+           # ? Eliminando elementos de una lista
 
+lista3 = ['hola', 'buenas', 'como', 'esta', 'qwer', 1, False]
 
+lista3.pop();       # * Elimina el ultimo elemento de la lista
 
+print('Eliminado el ultimo elemento:'  ,lista3)
+
+lista3.remove('qwer')
+
+print('Eliminando un elemento en especifico: qwer', lista3)
 
 
 
