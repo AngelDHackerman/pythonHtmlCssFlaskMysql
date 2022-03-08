@@ -2,11 +2,11 @@
 from operator import truediv
 
 
-if 5 > 3:                    # * este es el operador mayor que > 
-   print('5 es mayor a 3')
+# if 5 > 3:                    # * este es el operador mayor que > 
+#    print('5 es mayor a 3')
   
-if 3 > 6: 
-   print('Esto no se va a imprimir')
+# if 3 > 6: 
+#    print('Esto no se va a imprimir')
 
             # ? Variables
 
@@ -59,21 +59,24 @@ lista2 = lista.copy()     # * Copiamos la lista en una nueva variable
 lista.append(4)         # * Asi se agregan valores a la lista 
 #lista.clear()           # * Elimina todos los elementos dentro de la lista
 
-print('lista 1:',lista,'lista 2:' , lista2)
+#print('lista 1:',lista,'lista 2:' , lista2)
 
 
             # ? Contando elementos y calculando el largo de una lista
 
-# print('count:' ,lista.count(3), lista2.count(9))    # * count, cuenta el numero de veces que aparece el parametro que se le pasa.a
+
+#print('count:' ,lista.count(3), lista2.count(9))    # * count, cuenta el numero de veces que aparece el parametro que se le pasa.a
+
 #print( 'len: lista = ' ,len(lista), '; lista 2 = ', len(lista2))               # * len, mide el largo del array
 
 largoLista = len(lista)
 largoLista2 = len(lista2)
 
-# print('largoLista:', largoLista, 'largoLista2:', largoLista2)
 
-print(lista[0])
-print(lista[1])
+#print('largoLista:', largoLista, 'largoLista2:', largoLista2)
+
+#print(lista[0])
+#print(lista[1])
 
 
            # ? Eliminando elementos de una lista
@@ -82,11 +85,11 @@ lista3 = ['hola', 'buenas', 'como', 'esta', 'qwer', 1, True]
 
 lista3.pop();       # * Elimina el ultimo elemento de la lista
 
-print('Eliminado el ultimo elemento:'  ,lista3)
+#print('Eliminado el ultimo elemento:'  ,lista3)
 
 lista3.remove('qwer')
 
-print('Eliminando un elemento en especifico: qwer', lista3)
+#print('Eliminando un elemento en especifico: qwer', lista3)
 
             # ? Reverse y sort 
 
@@ -96,10 +99,10 @@ lista4.reverse()
 # lista4.sort() # Esto no funciona porque no puede ordernar strings y enteros
 # todo: Solo se pueden ordenar con sort() listas del mismo tipo. 
 
-print('Lista invertida:', lista4)
+# print('Lista invertida:', lista4)
 
 lista4.sort()
-print('lista invertida y ordenada', lista4)
+# print('lista invertida y ordenada', lista4)
 
 
                # ? Tuplas
@@ -113,13 +116,13 @@ tupla = ('hola', 'mundo', 'que', 'hace')
 listaDeTupla = list(tupla)
 listaDeTupla.append('de bueno')
 
-print('lista de tupla:', listaDeTupla)
+# print('lista de tupla:', listaDeTupla)
 
 
                # ? Rangos
 
 rango = range(6)
-print('Rango:', rango) # Esto indica que el rango va de 0 hasta 6.
+# print('Rango:', rango) # Esto indica que el rango va de 0 hasta 6.
 
 
                # ? Diccionarios
@@ -134,19 +137,19 @@ diccionario = {
 }
 
 
-print('diccionario:', diccionario)
-print('diccionario["raza"]:', diccionario["raza"])
-print('diccionario["edad"]:', diccionario["edad"])
-print('diccionario["nombre"]:', diccionario["nombre"])
+# print('diccionario:', diccionario)
+# print('diccionario["raza"]:', diccionario["raza"])
+# print('diccionario["edad"]:', diccionario["edad"])
+# print('diccionario["nombre"]:', diccionario["nombre"])
 
-print(diccionario.get('color'))
+# print(diccionario.get('color'))
 
    # * Cambiar valores de los diccionarios
 
 diccionario['nombre'] = 'Fluffy';
 
-print('nuevo diccionario' ,diccionario)
-print( 'lentgh de diccionario:' ,len(diccionario))
+# print('nuevo diccionario' ,diccionario)
+# print( 'lentgh de diccionario:' ,len(diccionario))
 
 
                # ? Profundizando en diccionarios
@@ -156,7 +159,7 @@ print( 'lentgh de diccionario:' ,len(diccionario))
 # Asi se agrega un elemento: 
 
 diccionario['ronronea'] = True
-print(diccionario)
+# print(diccionario)
 
 # copiaGatito = diccionario.copy()    # ? Asi podemos hacer una copia
 copiaGatito = dict (diccionario)       # ? Otra manera de hacer copias.
@@ -167,33 +170,40 @@ copiaGatito = dict (diccionario)       # ? Otra manera de hacer copias.
 # del diccionario['ronronea'] # ! Esta opcion elimina solo el elemento deseado
 diccionario.clear()           # ! Esta opcion elimina todo el contenido dentro del diccionario.
 
-print('copiaGatito:', copiaGatito)
-print('diccionario:', diccionario)
+#print('copiaGatito:', copiaGatito)
+#print('diccionario:', diccionario)
 
 
             # ? Diccionarios anidados y constructor dict 
 
+# Diccionarios Anidados
+
+fluffy = { 
+   "nombre": "fluffy",
+   "edad": 4,
+}
+mamba = { 
+   "nombre": "Black mamba",
+   "edad": 12,
+}
+gatitos = { 
+   "Fluffy": fluffy,
+   "Mamba": mamba,
+}
+
+print('Gatitos:', gatitos)
 
 
+# Constructor Dict: 
+
+perritos = dict (nombre = 'Chanchito feliz', edad = 8,)
+
+print('Perritos:', perritos)
 
 
+            # ? Booleanos
 
+verdadero = True
+falso = False
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print('verdadero: ', verdadero, 'falso:', falso)
