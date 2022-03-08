@@ -1,4 +1,7 @@
 
+from operator import truediv
+
+
 if 5 > 3:                    # * este es el operador mayor que > 
    print('5 es mayor a 3')
   
@@ -137,6 +140,59 @@ print('diccionario["edad"]:', diccionario["edad"])
 print('diccionario["nombre"]:', diccionario["nombre"])
 
 print(diccionario.get('color'))
+
+   # * Cambiar valores de los diccionarios
+
+diccionario['nombre'] = 'Fluffy';
+
+print('nuevo diccionario' ,diccionario)
+print( 'lentgh de diccionario:' ,len(diccionario))
+
+
+               # ? Profundizando en diccionarios
+
+   # * Agregar y eliminar valores a los diccionarios 
+
+# Asi se agrega un elemento: 
+
+diccionario['ronronea'] = True
+print(diccionario)
+
+# copiaGatito = diccionario.copy()    # ? Asi podemos hacer una copia
+copiaGatito = dict (diccionario)       # ? Otra manera de hacer copias.
+# Asi se elimina un elemento: 
+
+# diccionario.pop('ronronea')
+# diccionario.popitem()
+# del diccionario['ronronea'] # ! Esta opcion elimina solo el elemento deseado
+diccionario.clear()           # ! Esta opcion elimina todo el contenido dentro del diccionario.
+
+print('copiaGatito:', copiaGatito)
+print('diccionario:', diccionario)
+
+
+            # ? Diccionarios anidados y constructor dict 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
