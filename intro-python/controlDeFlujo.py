@@ -1,7 +1,7 @@
               # ? if y condiciones
 
-# if 2 < 5: 
-#   print('2 es menor que 5')
+if 2 < 5: 
+  print('2 es menor que 5')
 
 # a == b  es igual
 # a < b es menor que
@@ -15,14 +15,14 @@
 # elfi es como el else if de javaScript
 
 
-# if 2 > 5: 
-#   print('lala')
-# elif 2 > 5: 
-#   print('2 es mayor a 5 en elif')
-# elif 3 < 1:
-#   print('3 es menor que 1')
-# else:
-#   print('yo me imprimo si todo lo anterior es falso.')
+if 2 > 5: 
+  print('lala')
+elif 2 > 5: 
+  print('2 es mayor a 5 en elif')
+elif 3 < 1:
+  print('3 es menor que 1')
+else:
+  print('yo me imprimo si todo lo anterior es falso.')
 
 
             # ? if cortos y ternarios
@@ -35,8 +35,15 @@ if 2 < 5: print('if de una linea')
 print('Devuelve en true') if 5 > 2 else print('Devuelve en false')
 
 
+            # ? And & Or 
 
+# And: 
 
+if 2 < 5 and 3 > 2: 
+  print('AND: todas las evaluaciones devuelven True')
+
+if 2 < 5 or 1 < 8:
+  print('OR: una de todas las validaciones devuelve True')
 
 
 
