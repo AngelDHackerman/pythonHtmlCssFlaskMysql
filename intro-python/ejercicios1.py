@@ -12,7 +12,7 @@
 
             # ? Calculadora que suma
 
-primero = input('Ingrese el primer numero: ')
+primero = input('Ingrese el primer numero: ') # pide el primer numero
 
 try:            # * try va intentar ejecutar el codigo de abajo.
   primero = int(primero) # * Asi se hace el parseInt en python, pasadon strings a numeros.
@@ -23,7 +23,11 @@ if primero == 'no es un numero':
   print('Numero no valido, intenta de nuevo')
   exit() # todo: exit hace que se salga del programa
 
-segundo = input('Ingrese el segundo numero: ')
+
+simbolo = input('Ingrese operacion: ') # Pide la operacion a ejecutar 
+
+
+segundo = input('Ingrese el segundo numero: ') # Pide el segundo numero
 
 try: 
   segundo = int(segundo)
@@ -34,9 +38,15 @@ if segundo == 'no es un numero':
   print('Numero no valido, intenta de nuevo')
   exit() # todo: exit hace que se reinicie el ciclo del programa
 
-print(primero + segundo)
 
-
-
-
+if simbolo == '+':       # Se ejecuta la operacion elegida en simbolo = input('Ingrese operacion: ')
+  print('Suma: ', primero + segundo)
+elif simbolo == '-':
+  print('Resta: ', primero - segundo)
+elif simbolo == '*':
+  print('multiplicacion: ', primero * segundo)
+elif simbolo == '/':
+  print('Division', primero / segundo)
+else: 
+  print('Operacion NO valida')
 
