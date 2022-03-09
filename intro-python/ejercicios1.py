@@ -19,6 +19,9 @@ try:            # * try va intentar ejecutar el codigo de abajo.
 except:         # * si try falla se ejecuta el codigo de abajo.
   primero = 'no es un numero'
 
+if primero == 'no es un numero': 
+  print('Numero no valido, intenta de nuevo')
+  exit() # todo: exit hace que se salga del programa
 
 segundo = input('Ingrese el segundo numero: ')
 
@@ -27,10 +30,11 @@ try:
 except: 
   segundo = 'no es un numero'
 
-if primero == 'no es un numero' or segundo == 'no es un numero':
-  print('Esto de aqui no es un numero')
-else: 
-  print(primero + segundo)
+if segundo == 'no es un numero':
+  print('Numero no valido, intenta de nuevo')
+  exit() # todo: exit hace que se reinicie el ciclo del programa
+
+print(primero + segundo)
 
 
 
