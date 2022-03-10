@@ -23,9 +23,24 @@ class Usuario2:
   def __init__(self, nombre, apellido):
     self.nombre = nombre
     self.apellido = apellido
-  
-alumno = Usuario2('Felipe', 'Feliz')
-alumno2 = Usuario2('Chanchito', 'feliz')
 
-print(alumno.nombre, alumno.apellido, alumno2.nombre, alumno2.apellido)
+  def saludo(self):                                     # * asi se crean los metodos
+    print('Hola, mi nombre es:', self.nombre, self.apellido)   
+  
+
+
+
+alumno = Usuario2('Felipe', 'Feliz')
+
+# print(alumno.nombre, alumno.apellido)
+# alumno.saludo()
+
+alumno.saludo()
+alumno.nombre = 'Juanito'
+alumno.saludo()
+
+# del usuario.nombre              # todo:  con la palabra "del" eliminamos el metodo o propiedad que deseamos
+
+
+
 
