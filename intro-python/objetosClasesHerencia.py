@@ -34,25 +34,46 @@ class Admin(Usuario2):                                  # ? Asi se crea la heren
     print('Hola!, me llamo,', self.nombre, ' y soy administrador')
 
 
-alumno = Usuario2('Felipe', 'Feliz')                    # * asi se crean las INSTANCIAS 
+# alumno = Usuario2('Felipe', 'Feliz')                    # * asi se crean las INSTANCIAS 
 
-# print(alumno.nombre, alumno.apellido)
+# # print(alumno.nombre, alumno.apellido)
+# # alumno.saludo()
+
+# alumno.saludo()
+# alumno.nombre = 'Juanito'
 # alumno.saludo()
 
-alumno.saludo()
-alumno.nombre = 'Juanito'
-alumno.saludo()
-
-# del usuario.nombre              # todo:  con la palabra "del" eliminamos el metodo o propiedad que deseamos
+# # del usuario.nombre              # todo:  con la palabra "del" eliminamos el metodo o propiedad que deseamos
 
 
-admin = Admin('Super', 'Feliz')
-admin.saludo()
-admin.superSaludo()
+# admin = Admin('Super', 'Feliz')
+# admin.saludo()
+# admin.superSaludo()
+
+                          # ? Ejercicio de clases
+
+class Animal:
+  def __init__(self, nombre, onomatopeya):
+    self.nombre = nombre
+    self.onomatopeya = onomatopeya
+  
+  def saludo(self):
+    print('Hola, soy un', self.tipo, 'y mi sonido es el', self.onomatopeya)
+
+class Gato(Animal): # Gato(Animal) esto es herencia
+  tipo = 'gato'
+class Perro(Animal):
+  tipo = 'perro'
+
+class Canario(Animal):
+  tipo = 'Canario'
 
 
+gato = Gato('fluffy', 'maullido')
+gato.saludo()
 
+perro = Perro('firulais', 'ladrido')
+perro.saludo()
 
-
-
-
+canario = Canario('piolin', 'trino')
+canario.saludo()
