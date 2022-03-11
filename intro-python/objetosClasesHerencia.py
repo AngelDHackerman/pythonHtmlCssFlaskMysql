@@ -60,10 +60,17 @@ class Animal:
   def saludo(self):
     print('Hola, soy un', self.tipo, 'y mi sonido es el', self.onomatopeya)
 
+
 class Gato(Animal): # Gato(Animal) esto es herencia
   tipo = 'gato'
+  def __init__(self, nombre, onomatopeya):                  # ? Asi se EXTIENDE el metodo __init__ de la clase padre
+      Animal.__init__(self, nombre, onomatopeya)
+      print('Hola, soy un gato extendido!!!')
 class Perro(Animal):
   tipo = 'perro'
+  def __init__(self, nombre, onomatopeya):                  # ! ESta forma me gusta mas para extender las clases
+      super().__init__(nombre, onomatopeya)
+      print('Instanciando un perro!!!')
 
 class Canario(Animal):
   tipo = 'Canario'
