@@ -1,5 +1,12 @@
-from modulos import saludo, mascotas
+import modulos as xs
+from camelcase import CamelCase
 
-print(mascotas)
+print(xs.mascotas)
+xs.saludo('Angel')
 
-saludo('Angel')
+c = CamelCase()
+sentence = 'esta oracion necesita camelcase'
+
+camelCased = c.hump(sentence)
+
+print(camelCased)
