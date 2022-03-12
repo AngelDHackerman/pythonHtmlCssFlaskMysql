@@ -1,6 +1,9 @@
 
 # ? multiplicar dos números sin usar el símbolo de multiplicación
 
+from cmath import pi
+
+
 def multiplicar (multiplicador1, multiplicador2):
   contador = multiplicador1
   for i in range(multiplicador2 - 1):
@@ -51,6 +54,7 @@ def numberoMenor (lista):
 numberoMenor(lista = [23, 25, 26, 39, 49, 20, 100])
 
 # Respuesta del profesor
+                      # todo: Ver el video donde explica como funciona esto
 
 lista2 = [1, 2, 5, 3, 55, -24, -13]
 
@@ -68,7 +72,20 @@ print('menor', menor)
 # ? escribir una función que devuelva el volumen de una esfera por su radio
 # ? 4/3 * pi * r ** 3
 
+def volumen_espefa (radio):
+  area = 4/3 * pi * radio ** 3
+  area = round(area, 2)
+  print(area, 'cm3')
 
+volumen_espefa(6)
+
+# Respuesta del profesor 
+
+def calculaVolumen(r):
+    return 4 / 3 * 3.14 * r ** 3
+
+resultado = calculaVolumen(6)
+print(resultado)
 
 
 # ? escribir una función que indique si el usuario es mayor de edad
