@@ -20,6 +20,7 @@ for x in range(a):
 
 print(resultado)
 
+
 # ? ingresar nombre y apellido e imprimirlo al reves
 
 def invertirNombre (nombre, apellido):
@@ -31,7 +32,6 @@ def invertirNombre (nombre, apellido):
 
 invertirNombre('angel', 'hernandez')
 
-
 # Respuesta del profesor: 
 
 nombre = 'Nicolas'
@@ -42,9 +42,27 @@ concatenacion = nombre + ' ' + apellido
 print(concatenacion[::-1])
 
 
-
 # ? escribir una función que encuentre el elemento menor de una lista
 
+def numberoMenor (lista):
+  lista.sort()
+  print(lista[0])
+
+numberoMenor(lista = [23, 25, 26, 39, 49, 20, 100])
+
+# Respuesta del profesor
+
+lista2 = [1, 2, 5, 3, 55, -24, -13]
+
+menor = 'init'
+
+for x in lista2:
+    if menor == 'init':
+        menor = x
+    else:
+        menor = x if x < menor else menor
+
+print('menor', menor)
 
 
 # ? escribir una función que devuelva el volumen de una esfera por su radio
