@@ -22,6 +22,25 @@ print(resultado)
 
 # ? ingresar nombre y apellido e imprimirlo al reves
 
+def invertirNombre (nombre, apellido):
+  nombreCompleto = nombre + ' ' + apellido
+  cadenaInvertida = ''
+  for letra in nombreCompleto:
+    cadenaInvertida = letra + cadenaInvertida
+  print(cadenaInvertida)
+
+invertirNombre('angel', 'hernandez')
+
+
+# Respuesta del profesor: 
+
+nombre = 'Nicolas'
+apellido = 'Feliz'
+
+concatenacion = nombre + ' ' + apellido
+
+print(concatenacion[::-1])
+
 
 
 # ? escribir una función que encuentre el elemento menor de una lista
