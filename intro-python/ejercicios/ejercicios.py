@@ -1,45 +1,64 @@
-# multiplicar dos números sin usar el símbolo de multiplicación
 
+# ? multiplicar dos números sin usar el símbolo de multiplicación
 
-# ingresar nombre y apellido e imprimirlo al reves
+def multiplicar (multiplicador1, multiplicador2):
+  contador = multiplicador1
+  for i in range(multiplicador2 - 1):
+    contador += multiplicador1
+  print(multiplicador1, '*', multiplicador2, ':', contador)
 
+multiplicar(5, 4)
 
+          # Respuesta del profesor: 
 
-# escribir una función que encuentre el elemento menor de una lista
+a = 4
+b = 8
+resultado = 0
 
+for x in range(a):
+    resultado += b
 
+print(resultado)
 
-# escribir una función que devuelva el volumen de una esfera por su radio
-# 4/3 * pi * r ** 3
-
-
-
-
-# escribir una función que indique si el usuario es mayor de edad
-
-
-
-
-# escribir una función que indique si un número es par o impar
-
-
-
-
-# escribir una función que indique cuantas vocales tiene una palabra
+# ? ingresar nombre y apellido e imprimirlo al reves
 
 
 
+# ? escribir una función que encuentre el elemento menor de una lista
 
 
-# escribir una aplicación que reciba una cantidad infinita de números hasta
-# decir basta, luego que devuelva la suma de los números ingresados
+
+# ? escribir una función que devuelva el volumen de una esfera por su radio
+# ? 4/3 * pi * r ** 3
 
 
 
 
+# ? escribir una función que indique si el usuario es mayor de edad
 
-# escribir una función que reciba nombre y apellido y los vaya agregando a
-# un archivo
+
+
+
+# ? escribir una función que indique si un número es par o impar
+
+
+
+
+# ? escribir una función que indique cuantas vocales tiene una palabra
+
+
+
+
+
+# ? escribir una aplicación que reciba una cantidad infinita de números hasta
+# ? decir basta, luego que devuelva la suma de los números ingresados
+
+
+
+
+
+# ? escribir una función que reciba nombre y apellido y los vaya agregando a
+# ? un archivo
 
 
 
