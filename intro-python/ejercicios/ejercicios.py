@@ -101,7 +101,13 @@ mayorDeEdad(26)
 
 # ? escribir una función que indique si un número es par o impar
 
+def parImpar (numero):
+  if numero % 2 == 0:
+    print('Este es un numero par ;)')
+  else: 
+    print('Es un numero impar!')
 
+parImpar(26)
 
 
 # ? escribir una función que indique cuantas vocales tiene una palabra
