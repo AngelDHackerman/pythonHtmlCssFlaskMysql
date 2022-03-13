@@ -124,35 +124,37 @@ print('La palabra ingresada tiene:',contarVocales('abecedario'), 'vocales')
 # ? escribir una aplicación que reciba una cantidad infinita de números hasta
 # ? decir basta, luego que devuelva la suma de los números ingresados
 
-lista = []
-print('Ingrese numeros o \'basta\' para salir')
+# lista = []
+# print('Ingrese numeros o \'basta\' para salir')
 
-while True:
-  valor = input('Ingrese valor: ')
-  if valor == 'basta':
-    break
-  else: 
-    try:
-      valor = int(valor)
-      lista.append(valor)
-    except:
-      print('Dato no valido')
-      exit()
+# while True:
+#   valor = input('Ingrese valor: ')
+#   if valor == 'basta':
+#     break
+#   else: 
+#     try:
+#       valor = int(valor)
+#       lista.append(valor)
+#     except:
+#       print('Dato no valido')
+#       exit()
   
-contador = 0
-for n in lista:
-  contador += n
+# contador = 0
+# for n in lista:
+#   contador += n
 
-print('total sumado: ', contador)  
-
-
-
+# print('total sumado: ', contador)  
 
 
 # ? escribir una función que reciba nombre y apellido y los vaya agregando a
 # ? un archivo
 
+def agregarNombreAArchivo (nombre, apellido):
+  c = open('nombreCompleto.txt', 'a')
+  c.write(nombre + ' ' + apellido + '\n')
+  c.close()
 
+agregarNombreAArchivo('Angel', 'Hernandez')
 
 
 
