@@ -90,7 +90,13 @@ print(resultado)
 
 # ? escribir una función que indique si el usuario es mayor de edad
 
+def mayorDeEdad (edad):
+  if edad >= 18 :
+    print('Eres mayor de edad')
+  else:
+    print('Aun eres menor')
 
+mayorDeEdad(26)
 
 
 # ? escribir una función que indique si un número es par o impar
