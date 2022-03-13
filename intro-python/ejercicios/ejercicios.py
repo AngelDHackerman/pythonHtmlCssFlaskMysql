@@ -51,10 +51,10 @@ def numberoMenor (lista):
   lista.sort()
   print(lista[0])
 
-numberoMenor(lista = [23, 25, 26, 39, 49, 20, 100])
+numberoMenor(lista = [23, 25, 26, 39, 49, 20, 100, -50])
 
 # Respuesta del profesor
-                      # todo: Ver el video donde explica como funciona esto
+                      # todo: Ver el video donde explica como funciona esto de abajo:
 
 lista2 = [1, 2, 5, 3, 55, -24, -13]
 
@@ -92,9 +92,9 @@ print(resultado)
 
 def mayorDeEdad (edad):
   if edad >= 18 :
-    print('Eres mayor de edad')
+    print(True, 'Eres mayor de edad')
   else:
-    print('Aun eres menor')
+    print(False, 'Aun eres menor')
 
 mayorDeEdad(26)
 
@@ -112,12 +112,38 @@ parImpar(26)
 
 # ? escribir una función que indique cuantas vocales tiene una palabra
 
+def contarVocales (palabra):
+  contador = 0
+  for letra in palabra:
+    if letra.lower() in 'aeiou':
+      contador += 1
+  return contador
 
-
-
+print('La palabra ingresada tiene:',contarVocales('abecedario'), 'vocales')
 
 # ? escribir una aplicación que reciba una cantidad infinita de números hasta
 # ? decir basta, luego que devuelva la suma de los números ingresados
+
+lista = []
+print('Ingrese numeros o \'basta\' para salir')
+
+while True:
+  valor = input('Ingrese valor: ')
+  if valor == 'basta':
+    break
+  else: 
+    try:
+      valor = int(valor)
+      lista.append(valor)
+    except:
+      print('Dato no valido')
+      exit()
+  
+contador = 0
+for n in lista:
+  contador += n
+
+print('total sumado: ', contador)  
 
 
 
