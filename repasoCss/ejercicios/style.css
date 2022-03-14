@@ -7,9 +7,9 @@ body{
   background-color: #eeeeee;
 }
 .main { 
+  width: 600px;
   background-color: white;
   margin: 8px;
-  padding: 8px 0;
   border: 1px solid black;
   border-top: none;
   border-right: none;
@@ -19,13 +19,15 @@ body{
   -moz-box-shadow: -9px 10px 5px 0px rgba(0,0,0,0.75);
 }
 .Contenedor-texto {
-  margin: 12px 0;
+  padding: 8px 0;
   border-bottom: 1px solid gray;
 } 
 .texto { 
   margin-left: 8px;
+  padding: 4px 4px;
 }
 .botones { 
+  margin: 8px 0;
   margin-left: 8px;
   color: white;
   border-radius: 16px;
