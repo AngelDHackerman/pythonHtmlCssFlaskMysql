@@ -8,5 +8,13 @@ body {
 }
 #invisible { 
   display: none;
-  background-color: red;
+}
+p.ancho { 
+  max-width: 350px;
+  background-color: #f00;
+  margin: auto; /* * esto centra el div  */
+  position: fixed; /* * Relative es como el ancla y absolut es el barco / Fixed deja el contenido en la pantalla  */
+  right: 15px;
+  top: 0px;
+  bottom: 0px;
 }
