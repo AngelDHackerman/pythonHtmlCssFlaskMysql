@@ -1,0 +1,19 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body { 
+  background-color: #eee;
+}
+p { 
+  color: #222fff;
+  text-align: left;
+  text-indent: 40px; /* ? Asi podemos darle identacion al texto */
+  line-height: 1.7; /* ? Modificamos la separacion entre lineas */
+}
+a { 
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
