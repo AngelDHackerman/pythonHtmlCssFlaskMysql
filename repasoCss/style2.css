@@ -1,0 +1,19 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #eee;
+}
+.caja { 
+  margin: 8px;
+  padding: 8px;
+  border: solid 2px #faa;
+  border-left: 2px solid #afa;
+  background-color: #aaf;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  color: #575;
+}
