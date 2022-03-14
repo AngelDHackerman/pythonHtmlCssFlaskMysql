@@ -40,3 +40,18 @@ a:hover {
 a:active {
   color: black;
 }
+hr { 
+margin: 20px 0 0;
+}
+ul { 
+  margin: 4px 8px;
+  list-style-type: none; /* * eliminamos los puntitos de al lado */
+  background-color: #fff;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  padding-left: 0;
+}
+li { 
+  border-bottom: solid 1px #ddd;
+  padding: 16px;
+}
