@@ -12,3 +12,13 @@ body{
   overflow: auto; /* ? overflow: scroll nos crea ese efecto con las barras para hacer el scroll */
   overflow-x: scroll;
 }
+img { 
+  float: right;
+}
+img:hover { 
+  opacity: 0.6;
+}
+.float p { 
+  color: #f00;
+}
+
