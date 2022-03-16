@@ -6,8 +6,12 @@
 body { 
   background-color: #eee;
 }
-.fondo { 
+/* .fondo { 
   margin: 16px;
   background-color: hsl(120, 60%, 70%);
   opacity: 0.8;
+} */
+.fondo { 
+  margin: 16px;
+  background-image: linear-gradient(red, yellow);
 }
