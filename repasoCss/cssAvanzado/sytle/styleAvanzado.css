@@ -1,0 +1,19 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+}
+.fondo { 
+  height: 400px;
+  background-color: green;
+  background-image: url('https://placekitten.com/200/300');
+  /* background-repeat: repeat-x; */ /* * hace que solo se repita en el eje x */
+  background-repeat: no-repeat;
+  background-position: left top;
+  /* background-attachment: fixed; */ /* * Con esto el fondo baja junto con nostros */
+  background-attachment: scroll; /* esto le da el comportamiento por defecto */
+  background-size: cover; /* * con esto la imagen cubre todo el espacio disponible */
+}
