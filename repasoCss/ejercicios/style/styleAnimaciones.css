@@ -1,0 +1,37 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body { 
+  background-color: #eee;
+}
+.container { 
+  margin: 20px;
+  padding: 12px;
+  height: 400px;
+  background-color: white;
+}
+.box {
+  margin: 20px 0;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+  width: 40%;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} 
+.animacion1 { 
+  border-left: 2px solid red;
+  transition: transform 1.5s;
+}
+.animacion1:hover { 
+  transform: scale(1.1);
+}
+.animacion2 { 
+  border-left: 2px solid green;
+}
+.animacion3 { 
+  border-left: 2px solid blue;
+}
