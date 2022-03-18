@@ -1,0 +1,17 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body { 
+  background-color: #eee;
+}
+.grid { 
+  display: grid;
+  grid-template-rows: repeat(4, 50px); /* * el primer argumento es cuantas veces se repetira el segundo argumento (4 veces 50px) */
+  grid-template-columns: 30px repeat(3, 1fr) 15px; /* *1 columna de 30px luego se repite 3 veces 1fr y depues una columna de 15px*/
+  grid-gap: 15px;
+}
+.element { 
+  background-color: lightcoral;
+}
