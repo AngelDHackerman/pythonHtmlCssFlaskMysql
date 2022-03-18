@@ -1,0 +1,17 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+}
+.grid { 
+  display: grid;
+  grid-template-rows: minmax(100px, auto); /* * la primer fila tendra 100ox y la ultima estara en automatico */
+  /* grid-template-columns: 1fr 2fr 3fr; */ /* * se le da 1fr a la primera columna, 2fr a la segunda y 3fr a la tercera */
+  grid-template-columns: minmax(auto, 50%) 1fr 3em; /* * la primera estara en automatico y el resto de columnas solo utilizara el 50% del width, con el 50% de la segunda columna le metemos otra columan que mide 1fr y otr ade 3em */
+}
+.element { 
+  background-color: lightcoral; 
+}
