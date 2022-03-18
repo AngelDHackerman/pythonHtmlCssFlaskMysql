@@ -34,10 +34,14 @@ body {
   /* transition: transform 1.3s; */
   transition-duration: 0.5s;
 }
-.animacion2:hover {
-  
+.animacion2:hover { 
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.4)
 }
 .animacion3 { 
   border-left: 2px solid blue;
+  transition-duration: 1s;
+}
+.animacion3:hover { 
+  transition-duration: 0.6s;
+  background-color: #edefff;
 }
