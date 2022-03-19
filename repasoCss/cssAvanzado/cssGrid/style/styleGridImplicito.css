@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body { 
+  background-color: #eee;
+}
+.grid { 
+  display: grid;
+  grid-template-areas: 'header header'
+                       'content sidebar'
+                       'footer footer';
+  grid-template-rows: 150px 1fr 100px;
+  grid-template-columns: 1fr 200px;
+  grid-auto-rows: 140px; /* * Todas las columnas no definidas en el codigo anterior van a tomar 140px de medida */
+  grid-auto-flow: row; /* * Este nos indica para donde va el flujo de nuestro contenido, su valor por defecto es el de rows */
+  grid-gap: 4px;
+}
+.grid div { 
+  background-color: lightcoral;
+}
