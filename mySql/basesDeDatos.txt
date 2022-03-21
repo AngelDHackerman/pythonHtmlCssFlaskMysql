@@ -1,0 +1,17 @@
+
+					PRIMEROS PASOS
+
+
+create database nombreBaseDeDatos;			Crear una base de datos
+
+drop database nombreBaseDeDatos;			Eliminar una base de datos.
+
+use nombreBaseDeDatos;					Indicarle a mysql que base de datos vamos a usar.
+
+
+create table nombreDeLaTabla(campos tipoDato, ...);	crea una nueva tabla.
+ejemplo:
+`create table Usuario(id int, email varchar(255), userName varchar(50))`
+
+
+drop table nombreDeLaTabla 				Eliminamos esa tabla
