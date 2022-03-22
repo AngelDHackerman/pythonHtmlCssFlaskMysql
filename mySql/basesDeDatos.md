@@ -23,3 +23,14 @@ ejemplo:
 `alter table Usuario drop column edad;` Eliminamos la columna edad de la tabla usuario.
 
 `alter table Usuario modify column email varchar(50);` Cambiamos el tipo de dato de la columna email.
+
+### Insertar registros.
+
+`insert into Usuario (email, userName)
+values ('angel@angel.com', 'chanchitoFeliz')` 			Con esto agregamos info a email y a userName.
+
+`delete from Usuario where email = 'angel@angel.com' limit 1` 	Elimina el campo donde email es angel@angel.com
+
+`alter table Usuario add primary key (id);` 					Agregamos una llave primaria al campo id.
+
+`alter table Usuario modify column id int auto_increment;` 		Asi le decimos al campo id que es auto incrementado.
