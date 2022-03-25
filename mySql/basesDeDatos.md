@@ -44,3 +44,11 @@ values ('angel@angel.com', 'chanchitoFeliz')` 			Con esto agregamos info a email
 `update Usuario set edad = 32 where id = 1;` 
 
 `delete from Usuario where id = 1; ` 
+
+
+### Conectar python con MySql 
+
+`pip3 install mysql-connector-python` 
+
+`python3 nobreDelArchivo.py` asi ejecutamos nuestro archivo python con sql.
+
