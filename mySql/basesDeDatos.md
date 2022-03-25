@@ -35,5 +35,3 @@ values ('angel@angel.com', 'chanchitoFeliz')` 			Con esto agregamos info a email
 
 `alter table Usuario modify column id int auto_increment;` 		Asi le decimos al campo id que es auto incrementado.
 
-
-'trabajaremos en linux por hoy'
