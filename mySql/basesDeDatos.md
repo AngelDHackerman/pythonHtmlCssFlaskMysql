@@ -35,3 +35,12 @@ values ('angel@angel.com', 'chanchitoFeliz')` 			Con esto agregamos info a email
 
 `alter table Usuario modify column id int auto_increment;` 		Asi le decimos al campo id que es auto incrementado.
 
+`select * from Usuario;` 
+
+`select * from Usuario where email = 'felipe@chanchito.com';`
+
+`select * from Usuario where edad < 31;` 
+
+`update Usuario set edad = 32 where id = 1;` 
+
+`delete from Usuario where id = 1; ` 
